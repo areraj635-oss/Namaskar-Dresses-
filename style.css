@@ -216,3 +216,45 @@ footer {
         height: 220px;
     }
 }
+.search-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background: #ff3f6c;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+.search-box {
+    position: fixed;
+    bottom: 85px;
+    right: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+.search-box input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.search-box button {
+    padding: 8px 12px;
+    margin-left: 5px;
+    background: #ff3f6c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
