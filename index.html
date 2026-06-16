@@ -104,6 +104,37 @@
 <footer>
     <p>© 2026 Namaskar Dresses. All Rights Reserved.</p>
 </footer>
+<button id="searchBtn" class="search-float">🔍</button>
 
+<div id="searchBox" class="search-box" style="display:none;">
+    <input type="text" id="searchInput" placeholder="Search..." />
+    <button onclick="searchSection()">Go</button>
+</div>
+
+<script>
+function searchSection() {
+    let query = document.getElementById("searchInput").value.toLowerCase();
+
+    if (query.includes("collection")) {
+        document.getElementById("collections").scrollIntoView({ behavior: "smooth" });
+    } 
+    else if (query.includes("about")) {
+        document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+    } 
+    else if (query.includes("contact")) {
+        document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+    } 
+    else {
+        alert("Section not found!");
+    }
+
+    document.getElementById("searchBox").style.display = "none";
+}
+
+document.getElementById("searchBtn").onclick = function() {
+    let box = document.getElementById("searchBox");
+    box.style.display = box.style.display === "none" ? "block" : "none";
+};
+</script>
 </body>
 </html>
