@@ -147,3 +147,72 @@ footer {
         font-size: 2rem;
     }
 }
+.ladies-collection {
+    padding: 50px 20px;
+    background: #fdfdfd;
+    text-align: center;
+}
+
+.ladies-collection h2 {
+    font-size: 2rem;
+    color: #ff3f6c;
+    margin-bottom: 30px;
+}
+
+.myntra-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.myntra-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.myntra-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.myntra-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.myntra-card h3 {
+    margin: 15px 0;
+    color: #333;
+}
+
+.buy-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 12px 25px;
+    background: #ff3f6c;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background: #e6325d;
+}
+
+@media (max-width: 768px) {
+    .myntra-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .myntra-card img {
+        height: 220px;
+    }
+}
