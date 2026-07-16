@@ -230,3 +230,146 @@ display:grid;
 grid-template-columns:repeat(2,1fr);
 gap:18px;
 }
+/* PRODUCT CARD */
+
+.product-card{
+background:#fff;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+transition:.35s;
+position:relative;
+}
+
+.product-card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+.product-image{
+position:relative;
+overflow:hidden;
+}
+
+.product-image img{
+width:100%;
+height:240px;
+object-fit:cover;
+display:block;
+transition:.4s;
+}
+
+.product-card:hover .product-image img{
+transform:scale(1.05);
+}
+
+.wishlist-btn{
+position:absolute;
+top:10px;
+right:10px;
+width:40px;
+height:40px;
+border:none;
+border-radius:50%;
+background:#fff;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+cursor:pointer;
+font-size:18px;
+color:#444;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.wishlist-btn:hover{
+color:#ff3f6c;
+}
+
+.badge{
+position:absolute;
+left:10px;
+top:10px;
+background:#0F172A;
+color:#F1E4BC;
+padding:5px 10px;
+border-radius:30px;
+font-size:11px;
+font-weight:600;
+}
+
+.product-info{
+padding:14px;
+}
+
+.product-info h3{
+font-size:15px;
+font-weight:600;
+margin-bottom:10px;
+color:#222;
+line-height:1.4;
+}
+
+.price{
+font-size:18px;
+font-weight:700;
+color:#111;
+margin-bottom:10px;
+}
+
+.price span{
+margin-left:8px;
+font-size:13px;
+text-decoration:line-through;
+color:#888;
+font-weight:500;
+}
+
+.rating{
+color:#ffb400;
+font-size:14px;
+margin-bottom:14px;
+letter-spacing:1px;
+}
+
+.cart-btn{
+width:100%;
+height:45px;
+border:none;
+border-radius:12px;
+background:#0F172A;
+color:#F1E4BC;
+font-size:15px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+.cart-btn:hover{
+background:#1e293b;
+}
+
+
+/* DELIVERY */
+
+.delivery{
+padding:18px;
+}
+
+.delivery-box{
+background:#0F172A;
+color:#F1E4BC;
+padding:25px;
+border-radius:18px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.12);
+}
+
+.delivery-box h2{
+font-size:24px;
+margin-bottom:10px;
+}
+
+.delivery-box p{
+font-size:15px;
+line-height:1.6;
+}
