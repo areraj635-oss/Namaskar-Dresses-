@@ -202,3 +202,62 @@ window.open(
 });
 
 }
+// ===============================
+// SMOOTH SCROLL
+// ===============================
+
+const footerLinks =
+document.querySelectorAll(".footer-links a");
+
+footerLinks.forEach(function(link){
+
+link.addEventListener("click",function(e){
+
+e.preventDefault();
+
+const text =
+this.innerText.toLowerCase();
+
+if(text==="home"){
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
+
+});
+
+});
+
+
+// ===============================
+// PAGE LOADED
+// ===============================
+
+window.addEventListener("load",function(){
+
+showSlide(currentSlide);
+
+showToast("👋 Welcome to Namaskar Dresses");
+
+});
+
+
+// ===============================
+// OPTIONAL FUTURE FEATURES
+// ===============================
+
+// Local Storage
+// Login System
+// Checkout
+// Payment Gateway
+// Order Tracking
+// Wishlist Sync
+// Admin Panel
+// Product Filter
+// Dark Mode
+
+
+console.log("Namaskar Dresses V3 Loaded Successfully");
