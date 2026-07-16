@@ -1,140 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Namaskar Dresses | The Complete Family Shop</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Namaskar Dresses | The Complete Family Shop</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
 </head>
+
 <body>
 
-<header>
-    <div class="logo" style="display:flex;align-items:center;gap:10px;">
-    <img src="file_000000005eb07208a4eee183eeefa7b2.png" alt="ND Logo" style="height:70px;">
-    <div>
-        <h2 style="margin:0;color:#ff3f6c;">Namaskar Dresses</h2>
-        <small style="color:#666;">The Complete Family Shop</small>
-    </div>
-    </div>
-    <nav>
-        <a href="#collections">Collections</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+<header class="header">
 
-<section class="hero">
-    <div class="hero-content">
-        <h1>Fashion For Every Generation</h1>
-        <p>The Complete Family Shop</p>
-        <div class="buttons">
-            <a href="https://wa.me/916205317807" class="btn">WhatsApp</a>
-            <a href="tel:6205317807" class="btn secondary">Call Now</a>
-        </div>
-    </div>
-</section>
-
-<section id="collections" class="collections">
-    <h2>Our Collections</h2>
-
-    <div class="cards">
-        <div class="card">
-            <h3>👗 Ladies Wear</h3>
-            <p>Elegant ethnic and western collections.</p>
-        </div>
-
-        <div class="card">
-            <h3>👔 Gents Wear</h3>
-            <p>Premium styles for every occasion.</p>
-        </div>
-
-        <div class="card">
-            <h3>🧒 Kids Wear</h3>
-            <p>Comfortable and trendy outfits.</p>
-        </div>
-    </div>
-</section>
-
-<section id="about" class="about">
-    <h2>About Us</h2>
-    <p>
-        Namaskar Dresses is your trusted destination for quality fashion.
-        We bring the latest trends in Ladies, Gents and Kids wear under one roof.
-    </p>
-</section>
-
-<section id="contact" class="contact">
-    <h2>Visit Our Store</h2>
-    <p>Dahi Bazzar, Near Someshwarnath Mandir</p>
-    <p>Areraj, East Champaran, Bihar - 845411</p>
-    <p>📞 6205317807</p>
-    <p>🕘 Open Daily: 9:00 AM - 9:00 PM</p>
-</section>
-<section id="ladies-collection" class="ladies-collection">
-    <h2>✨ Ladies Collection ✨</h2>
-
-    <div class="myntra-grid">
-
-        <div class="myntra-card">
-            <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=600" alt="Kurti">
-            <h3>Designer Kurti Set</h3>
-            <a href="#" class="buy-btn">Shop Now</a>
-        </div>
-
-        <div class="myntra-card">
-            <img src="https://images.unsplash.com/photo-1583391733981-8498406dd8d1?w=600" alt="Suit">
-            <h3>Printed Suit</h3>
-            <a href="#" class="buy-btn">Shop Now</a>
-        </div>
-
-        <div class="myntra-card">
-            <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600" alt="Plazo">
-            <h3>Kurti With Plazo</h3>
-            <a href="#" class="buy-btn">Shop Now</a>
-        </div>
-
-        <div class="myntra-card">
-            <img src="https://images.unsplash.com/photo-1623609163859-ca93c959b98a?w=600" alt="Ethnic">
-            <h3>Ethnic Wear</h3>
-            <a href="#" class="buy-btn">Shop Now</a>
-        </div>
-
-    </div>
-</section>
-<footer>
-    <p>© 2026 Namaskar Dresses. All Rights Reserved.</p>
-</footer>
-<button id="searchBtn" class="search-float">🔍</button>
-
-<div id="searchBox" class="search-box" style="display:none;">
-    <input type="text" id="searchInput" placeholder="Search..." />
-    <button onclick="searchSection()">Go</button>
+<div class="menu-btn">
+<i class="fa-solid fa-bars"></i>
 </div>
 
-<script>
-function searchSection() {
-    let query = document.getElementById("searchInput").value.toLowerCase();
+<div class="logo">
 
-    if (query.includes("collection")) {
-        document.getElementById("collections").scrollIntoView({ behavior: "smooth" });
-    } 
-    else if (query.includes("about")) {
-        document.getElementById("about").scrollIntoView({ behavior: "smooth" });
-    } 
-    else if (query.includes("contact")) {
-        document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
-    } 
-    else {
-        alert("Section not found!");
-    }
+<img src="logo.png" alt="ND Logo">
 
-    document.getElementById("searchBox").style.display = "none";
-}
+<div class="logo-text">
 
-document.getElementById("searchBtn").onclick = function() {
-    let box = document.getElementById("searchBox");
-    box.style.display = box.style.display === "none" ? "block" : "none";
-};
-</script>
-</body>
-</html>
+<h2>Namaskar Dresses</h2>
+
+<p>The Complete Family Shop</p>
+
+</div>
+
+</div>
+
+<div class="header-icons">
+
+<button class="icon-btn">
+<i class="fa-regular fa-heart"></i>
+<span id="wishlist-count">0</span>
+</button>
+
+<button class="icon-btn">
+<i class="fa-solid fa-cart-shopping"></i>
+<span id="cart-count">0</span>
+</button>
+
+</div>
+
+</header>
+
+
+<section class="search-section">
+
+<div class="search-box">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+placeholder="Search Kurti, Saree, Suit, Jeans...">
+
+</div>
+
+</section>
+
+
+<section class="categories">
+
+<div class="category">
+<div class="circle">
+👗
+</div>
+<p>Ladies</p>
+</div>
+
+<div class="category">
+<div class="circle">
+👔
+</div>
+<p>Gents</p>
+</div>
+
+<div class="category">
+<div class="circle">
+🧒
+</div>
+<p>Kids</p>
+</div>
+
+<div class="category">
+<div class="circle">
+🥻
+</div>
+<p>Saree</p>
+</div>
+
+<div class="category">
+<div class="circle">
+👚
+</div>
+<p>Kurti</p>
+</div>
+
+<div class="category">
+<div class="circle">
+👖
+</div>
+<p>More</p>
+</div>
+
+</section>
+
+
+<section class="offer-strip">
+
+<p>
+
+🎉 FESTIVAL SALE • UP TO 50% OFF • FREE HOME DELIVERY (4–5 KM)
+
+</p>
+
+</section>
+
+
+<section class="slider">
+
+<div class="slides">
+
+<img src="images/banner1.jpg" class="slide active">
+
+<img src="images/banner2.jpg" class="slide">
+
+<img src="images/banner3.jpg" class="slide">
+
+</div>
+
+</section>
+
+
+<section class="section-title">
+
+<h2>
+
+🔥 Trending Collection
+
+</h2>
+
+</section>
+
+<section class="products">
