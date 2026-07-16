@@ -174,12 +174,6 @@ card.style.display="none";
 const menuButton =
 document.querySelector(".menu-btn");
 
-menuButton.addEventListener("click",function(){
-
-showToast("☰ Menu Coming Soon");
-
-});
-
 
 // ===============================
 // MAP BUTTON
@@ -260,4 +254,30 @@ showToast("👋 Welcome to Namaskar Dresses");
 // Dark Mode
 
 
-console.log("Namaskar Dresses V3 Loaded Successfully");
+console.log
+// ======================
+// PREMIUM SIDE MENU
+// ======================
+
+const sideMenu = document.getElementById("sideMenu");
+const menuOverlay = document.getElementById("menuOverlay");
+const closeMenu = document.getElementById("closeMenu");
+
+menuButton.removeEventListener("click", function(){});
+
+menuButton.onclick = function(){
+
+sideMenu.classList.add("active");
+menuOverlay.classList.add("active");
+
+};
+
+function closeDrawer(){
+
+sideMenu.classList.remove("active");
+menuOverlay.classList.remove("active");
+
+}
+
+closeMenu.onclick = closeDrawer;
+menuOverlay.onclick = closeDrawer;
