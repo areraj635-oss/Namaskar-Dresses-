@@ -99,3 +99,106 @@ const slides =
 document.querySelectorAll(".slide");
 
 let currentSlide = 0;
+// ===============================
+// AUTO SLIDER
+// ===============================
+
+function showSlide(index){
+
+slides.forEach(function(slide){
+
+slide.classList.remove("active");
+
+});
+
+slides[index].classList.add("active");
+
+}
+
+function nextSlide(){
+
+currentSlide++;
+
+if(currentSlide >= slides.length){
+
+currentSlide = 0;
+
+}
+
+showSlide(currentSlide);
+
+}
+
+setInterval(nextSlide,3000);
+
+
+// ===============================
+// SEARCH
+// ===============================
+
+const searchInput =
+document.querySelector(".search-box input");
+
+searchInput.addEventListener("keyup",function(){
+
+let value =
+searchInput.value.toLowerCase();
+
+const cards =
+document.querySelectorAll(".product-card");
+
+cards.forEach(function(card){
+
+let text =
+card.innerText.toLowerCase();
+
+if(text.indexOf(value)>-1){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
+
+});
+
+});
+
+
+// ===============================
+// MENU BUTTON
+// ===============================
+
+const menuButton =
+document.querySelector(".menu-btn");
+
+menuButton.addEventListener("click",function(){
+
+showToast("☰ Menu Coming Soon");
+
+});
+
+
+// ===============================
+// MAP BUTTON
+// ===============================
+
+const mapButton =
+document.querySelector(".map-btn");
+
+if(mapButton){
+
+mapButton.addEventListener("click",function(e){
+
+e.preventDefault();
+
+window.open(
+"https://maps.google.com",
+"_blank"
+);
+
+});
+
+}
