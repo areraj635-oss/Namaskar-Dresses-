@@ -2,191 +2,317 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0b1730">
-<title>Namaskar Dresses | The Complete Family Shop</title>
-<meta name="description" content="Discover family fashion at Namaskar Dresses, Areraj, Bihar. Shop ladies, gents and kids clothing with free home delivery within 4–5 km.">
-<link rel="icon" type="image/png" href="logo.png">
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1930">
+  <meta name="description" content="Namaskar Dresses — The Complete Family Shop. Shop fashion for ladies, gents and kids in Areraj, Bihar.">
+  <title>Namaskar Dresses | The Complete Family Shop</title>
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="topbar">✦ FREE HOME DELIVERY WITHIN 4–5 KM &nbsp; | &nbsp; THE COMPLETE FAMILY SHOP ✦</div>
-
-<header class="header">
-  <button class="menu-btn" id="menuBtn" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
-  <a class="logo" href="#">
-    <img src="logo.png" alt="Namaskar Dresses logo">
-    <span><strong>Namaskar Dresses</strong><small>The Complete Family Shop</small></span>
-  </a>
-  <div class="header-icons">
-    <button class="icon-btn" aria-label="Wishlist" onclick="document.getElementById('new-arrivals').scrollIntoView({behavior:'smooth'})"><i class="fa-regular fa-heart"></i></button>
-    <button class="icon-btn" aria-label="Shopping cart" onclick="document.getElementById('cart-note').scrollIntoView({behavior:'smooth'})"><i class="fa-solid fa-bag-shopping"></i></button>
+  <div class="top-strip">
+    ✦ FREE HOME DELIVERY (4–5 KM) <span>•</span> BEST QUALITY <span>•</span> TRUSTED STORE
   </div>
-</header>
 
-<section class="search-section">
-  <label class="search-box">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <input id="productSearch" type="search" placeholder="Search ladies, gents, kids wear...">
-  </label>
-</section>
+  <header class="header">
+    <button class="menu-button" id="menuButton" aria-label="Open menu">☰</button>
 
-<nav class="categories" aria-label="Shop categories">
-  <a class="category" href="#ladies"><span class="circle">👗</span><span>Ladies</span></a>
-  <a class="category" href="#gents"><span class="circle">👔</span><span>Gents</span></a>
-  <a class="category" href="#kids"><span class="circle">🧒</span><span>Kids</span></a>
-  <a class="category" href="#new-arrivals"><span class="circle">✨</span><span>New In</span></a>
-  <a class="category" href="#collections"><span class="circle">👚</span><span>Collections</span></a>
-</nav>
+    <a class="brand" href="#home">
+      <img src="logo.png" alt="Namaskar Dresses logo"
+           onerror="this.style.display='none'">
+      <span class="brand-copy">
+        <strong>Namaskar Dresses</strong>
+        <small>The Complete Family Shop</small>
+      </span>
+    </a>
 
-<section class="hero">
-  <div class="hero-copy">
-    <span class="eyebrow">STYLE • QUALITY • VALUE</span>
-    <h1>Style for<br><em>Every Family</em></h1>
-    <p>Discover everyday fashion and special-occasion styles for your loved ones.</p>
-    <a class="gold-btn" href="#collections">Explore Collection <i class="fa-solid fa-arrow-right"></i></a>
+    <form class="search-box" id="searchForm">
+      <input id="searchInput" type="search" placeholder="Search for products..." aria-label="Search products">
+      <button aria-label="Search">⌕</button>
+    </form>
+
+    <div class="header-actions">
+      <button class="icon-button" id="wishlistButton" aria-label="Wishlist">♡ <span id="wishCount">0</span></button>
+      <button class="icon-button" id="cartButton" aria-label="Shopping cart">🛒 <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <nav class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#categories">Collections</a>
+    <a href="#store">About Us</a>
+    <a href="#footer">Contact</a>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">THE ROYAL FASHION EDIT</span>
+        <h1>Style for<br><span>Every Family</span></h1>
+        <p>Discover fashion for every occasion, every age and every member of your family.</p>
+        <div class="hero-tags">LADIES <i>•</i> GENTS <i>•</i> KIDS <i>•</i> MORE</div>
+        <a href="#categories" class="gold-button">Explore Collection <span>→</span></a>
+      </div>
+      <div class="hero-image">
+        <img src="images/banner1.jpg" alt="Namaskar Dresses fashion collection"
+             onerror="this.parentElement.classList.add('image-fallback');this.style.display='none'">
+        <div class="hero-fallback">
+          <span>THE NEW COLLECTION</span>
+          <strong>Elegance for<br>Every Occasion</strong>
+          <span>FASHION • FAMILY • STYLE</span>
+        </div>
+      </div>
+      <div class="hero-bottom">TIMELESS STYLE <span>✦</span> EVERYDAY ELEGANCE</div>
+    </section>
+
+    <section class="category-section section-wrap" id="categories">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">FIND YOUR STYLE</span>
+          <h2>Shop by Category</h2>
+        </div>
+        <span class="heading-note">Fashion for the whole family</span>
+      </div>
+
+      <div class="category-grid">
+        <a href="#ladies" class="category-card"><span class="category-symbol">♙</span><strong>Ladies</strong><small>Explore styles</small></a>
+        <a href="#gents" class="category-card"><span class="category-symbol">♔</span><strong>Gents</strong><small>Explore styles</small></a>
+        <a href="#kids" class="category-card"><span class="category-symbol">♧</span><strong>Kids</strong><small>Little fashion</small></a>
+        <a href="#new-arrivals" class="category-card"><span class="category-symbol">✧</span><strong>New Arrivals</strong><small>Latest collection</small></a>
+        <a href="#trending" class="category-card"><span class="category-symbol">♢</span><strong>Trending</strong><small>Popular styles</small></a>
+        <a href="#store" class="category-card"><span class="category-symbol">⌖</span><strong>Visit Store</strong><small>Find us nearby</small></a>
+      </div>
+    </section>
+
+    <div class="sale-strip">
+      <span>✦ FESTIVAL SALE</span>
+      <span>UP TO 50% OFF</span>
+      <span>✦ FREE HOME DELIVERY (4–5 KM)</span>
+    </div>
+
+    <section class="section-wrap collection-section" id="trending">
+      <div class="section-heading">
+        <div><span class="eyebrow">HANDPICKED FOR YOU</span><h2>Trending Collection</h2></div>
+        <span class="heading-note">Discover your next favourite</span>
+      </div>
+      <div class="product-grid" id="trendingProducts"></div>
+    </section>
+
+    <section class="new-arrivals-section">
+      <div class="section-wrap collection-section" id="new-arrivals">
+        <div class="section-heading">
+          <div><span class="eyebrow">JUST ARRIVED</span><h2>New Arrivals</h2></div>
+          <span class="heading-note">Fresh styles, timeless appeal</span>
+        </div>
+        <div class="product-grid" id="newProducts"></div>
+      </div>
+    </section>
+
+    <section class="section-wrap collection-section" id="ladies">
+      <div class="section-heading">
+        <div><span class="eyebrow">GRACEFUL & BEAUTIFUL</span><h2>Ladies Collection</h2></div>
+        <span class="heading-note">Styles for every occasion</span>
+      </div>
+      <div class="product-grid" id="ladiesProducts"></div>
+    </section>
+
+    <section class="section-wrap collection-section" id="gents">
+      <div class="section-heading">
+        <div><span class="eyebrow">SMART EVERYDAY STYLE</span><h2>Gents Collection</h2></div>
+        <span class="heading-note">Comfort meets style</span>
+      </div>
+      <div class="product-grid" id="gentsProducts"></div>
+    </section>
+
+    <section class="section-wrap collection-section" id="kids">
+      <div class="section-heading">
+        <div><span class="eyebrow">LITTLE STARS, BIG STYLE</span><h2>Kids Collection</h2></div>
+        <span class="heading-note">Cute looks for little ones</span>
+      </div>
+      <div class="product-grid" id="kidsProducts"></div>
+    </section>
+
+    <section class="benefits">
+      <div class="benefit-item"><span>✦</span><div><strong>Free Home Delivery</strong><small>Available within 4–5 KM</small></div></div>
+      <div class="benefit-item"><span>♢</span><div><strong>Family Fashion</strong><small>Styles for everyone</small></div></div>
+      <div class="benefit-item"><span>♡</span><div><strong>Visit Our Store</strong><small>Experience our collection</small></div></div>
+    </section>
+
+    <section class="store-section section-wrap" id="store">
+      <div class="store-copy">
+        <span class="eyebrow">WE LOOK FORWARD TO SEEING YOU</span>
+        <h2>A Family Store.<br><span>A World of Style.</span></h2>
+        <p>Visit Namaskar Dresses and explore fashion for every member of your family.</p>
+        <a class="gold-button" target="_blank" rel="noopener"
+           href="https://www.google.com/maps/search/?api=1&query=Namaskar+Dresses+Dahi+Bazzar+Areraj+Bihar">Open in Google Maps ↗</a>
+      </div>
+      <div class="store-details">
+        <div class="detail-row"><span>⌖</span><div><strong>Our Address</strong><p>Dahi Bazzar, Near Someshwarnath Mandir, Areraj, East Champaran, Bihar – 845411</p></div></div>
+        <div class="detail-row"><span>◷</span><div><strong>Store Timings</strong><p>Every day · 9:00 AM – 9:00 PM</p></div></div>
+        <div class="detail-row"><span>♧</span><div><strong>Delivery Service</strong><p>Free home delivery available within 4–5 KM.</p></div></div>
+        <div class="detail-row"><span>☎</span><div><strong>Call Us</strong><p><a href="tel:+916205317807">+91 62053 17807</a></p></div></div>
+      </div>
+    </section>
+
+    <section class="review-section">
+      <div class="section-wrap review-inner">
+        <span class="eyebrow">YOUR LOVE MEANS EVERYTHING</span>
+        <h2>Every Family Has a Story.</h2>
+        <p>We look forward to helping you find a style you'll love.</p>
+        <a class="outline-button" href="tel:+916205317807">Get in Touch</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="footer-main">
+      <a class="brand footer-brand" href="#home">
+        <img src="logo.png" alt="ND logo" onerror="this.style.display='none'">
+        <span class="brand-copy"><strong>Namaskar Dresses</strong><small>The Complete Family Shop</small></span>
+      </a>
+      <p>Fashion for every member of your family.<br>Style, comfort and choice—all in one place.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a><a href="#categories">Collections</a><a href="#store">Our Store</a><a href="tel:+916205317807">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> Namaskar Dresses. All rights reserved.</div>
+  </footer>
+
+  <div class="mobile-nav">
+    <a href="#home"><span>⌂</span>Home</a>
+    <a href="#categories"><span>♧</span>Shop</a>
+    <button id="mobileWish"><span>♡</span>Wishlist <b id="mobileWishCount">0</b></button>
+    <button id="mobileCart"><span>🛒</span>Cart <b id="mobileCartCount">0</b></button>
   </div>
-  <div class="hero-art">
-    <div class="hero-seal"><span>ND</span><small>EST. NAMASKAR DRESSES</small></div>
-    <span class="hero-caption">Fashion for everyone</span>
-  </div>
-</section>
 
-<div class="offer-strip"><span>✦ FESTIVE STYLE</span><span>✦ GREAT VALUE</span><span>✦ FREE DELIVERY WITHIN 4–5 KM</span></div>
+  <div class="toast" id="toast" role="status"></div>
 
-<section class="section" id="collections">
-  <div class="section-heading">
-    <div><span class="eyebrow">CURATED FOR YOU</span><h2>Shop by Collection</h2></div>
-    <span class="heading-mark">✦</span>
-  </div>
-  <div class="collection-grid">
-    <a class="collection-card ladies" href="#ladies"><span>01 / WOMEN</span><h3>Ladies Wear</h3><p>Kurtis, suits, tops & more</p><b>EXPLORE ↗</b></a>
-    <a class="collection-card gents" href="#gents"><span>02 / MEN</span><h3>Gents Wear</h3><p>Shirts, jeans, tees & more</p><b>EXPLORE ↗</b></a>
-    <a class="collection-card kids" href="#kids"><span>03 / LITTLE ONES</span><h3>Kids Collection</h3><p>Everyday comfort & occasion wear</p><b>EXPLORE ↗</b></a>
-  </div>
-</section>
+  <script>
+    const products = [
+      {name:"Designer Kurti", price:299, category:"ladies", badge:"TRENDING", image:"images/product1.jpg"},
+      {name:"Kurti Set", price:599, category:"ladies", badge:"POPULAR", image:"images/product2.jpg"},
+      {name:"Ladies Top", price:249, category:"ladies", badge:"NEW", image:"images/product3.jpg"},
+      {name:"Cotton Nighty", price:299, category:"ladies", badge:"COMFORT", image:"images/product4.jpg"},
+      {name:"Men's Shirt", price:399, category:"gents", badge:"BESTSELLER", image:"images/product5.jpg"},
+      {name:"Men's T-Shirt", price:199, category:"gents", badge:"CASUAL", image:"images/product6.jpg"},
+      {name:"Men's Jeans", price:699, category:"gents", badge:"POPULAR", image:"images/product7.jpg"},
+      {name:"Track Pants", price:499, category:"gents", badge:"COMFORT", image:"images/product8.jpg"},
+      {name:"Kids Frock", price:399, category:"kids", badge:"CUTE PICK", image:"images/product9.jpg"},
+      {name:"Boys Suit", price:799, category:"kids", badge:"OCCASION", image:"images/product10.jpg"},
+      {name:"Kids T-Shirt", price:199, category:"kids", badge:"EVERYDAY", image:"images/product11.jpg"},
+      {name:"Kids Kurta Set", price:499, category:"kids", badge:"FESTIVE", image:"images/product12.jpg"}
+    ];
 
-<section class="section product-section" id="ladies">
-  <div class="section-heading">
-    <div><span class="eyebrow">FASHION FAVOURITES</span><h2>Ladies Collection</h2></div>
-  </div>
-  <div class="products">
-    <article class="product-card" data-name="kurti kurti set ladies">
-      <div class="product-image"><img src="images/product1.jpg" alt="Ladies kurti collection" loading="lazy"><span class="badge">POPULAR</span></div>
-      <div class="product-info"><h3>Kurtis & Kurti Sets</h3><p>Everyday and festive styles</p><span class="price">₹179–₹2,099</span></div>
-    </article>
-    <article class="product-card" data-name="ladies top frock">
-      <div class="product-image"><img src="images/product2.jpg" alt="Ladies tops and frocks" loading="lazy"><span class="badge">NEW STYLES</span></div>
-      <div class="product-info"><h3>Tops & Frocks</h3><p>Styles for every occasion</p><span class="price">₹199–₹1,399</span></div>
-    </article>
-    <article class="product-card" data-name="nighty palazzo sharara">
-      <div class="product-image"><img src="images/product5.jpg" alt="Ladies nightwear and palazzo" loading="lazy"></div>
-      <div class="product-info"><h3>Nightwear & Bottoms</h3><p>Comfort for every day</p><span class="price">₹99–₹499</span></div>
-    </article>
-  </div>
-</section>
+    const cart = [];
+    const wishlist = new Set();
+    const rupees = n => "₹" + n.toLocaleString("en-IN");
+    const toast = message => {
+      const el = document.getElementById("toast");
+      el.textContent = message;
+      el.classList.add("show");
+      clearTimeout(window.toastTimer);
+      window.toastTimer = setTimeout(() => el.classList.remove("show"), 2200);
+    };
 
-<section class="section product-section" id="gents">
-  <div class="section-heading">
-    <div><span class="eyebrow">SMART EVERYDAY STYLE</span><h2>Gents Collection</h2></div>
-  </div>
-  <div class="products">
-    <article class="product-card" data-name="shirt half shirt">
-      <div class="product-image"><img src="images/product8.jpg" alt="Gents shirts" loading="lazy"></div>
-      <div class="product-info"><h3>Shirts</h3><p>Casual and smart styles</p><span class="price">₹219–₹699</span></div>
-    </article>
-    <article class="product-card" data-name="t-shirt tee">
-      <div class="product-image"><img src="images/product3.jpg" alt="Gents T-shirts" loading="lazy"></div>
-      <div class="product-info"><h3>T-Shirts</h3><p>Easy everyday essentials</p><span class="price">₹99–₹349</span></div>
-    </article>
-    <article class="product-card" data-name="jeans lower track pants">
-      <div class="product-image"><img src="images/product4.jpg" alt="Gents jeans and bottoms" loading="lazy"></div>
-      <div class="product-info"><h3>Jeans & Track Pants</h3><p>Comfort meets style</p><span class="price">₹149–₹1,299</span></div>
-    </article>
-  </div>
-</section>
+    function renderProducts(containerId, items) {
+      const container = document.getElementById(containerId);
+      container.innerHTML = items.length ? items.map(p => {
+        const index = products.indexOf(p);
+        return `<article class="product-card">
+          <div class="product-photo">
+            <span class="product-badge">${p.badge}</span>
+            <img src="${p.image}" alt="${p.name}" loading="lazy"
+              onerror="this.style.display='none';this.parentElement.classList.add('photo-fallback')">
+            <span class="photo-fallback-label">NAMASKAR<br>DRESSES</span>
+            <button class="wish-button ${wishlist.has(index) ? 'selected' : ''}" data-wish="${index}" aria-label="Add ${p.name} to wishlist">${wishlist.has(index) ? '♥' : '♡'}</button>
+          </div>
+          <div class="product-info">
+            <span class="product-category">${p.category.toUpperCase()} COLLECTION</span>
+            <h3>${p.name}</h3>
+            <strong class="product-price">${rupees(p.price)}</strong>
+            <p class="price-note">Price may vary by size and design</p>
+            <button class="add-button" data-cart="${index}">＋ Add to Cart</button>
+          </div>
+        </article>`;
+      }).join("") : '<p class="empty-message">No matching products found.</p>';
+    }
 
-<section class="section product-section" id="kids">
-  <div class="section-heading">
-    <div><span class="eyebrow">LITTLE STYLES, BIG SMILES</span><h2>Kids Collection</h2></div>
-  </div>
-  <div class="products">
-    <article class="product-card" data-name="kids boys girls suit">
-      <div class="product-image"><img src="images/product6.jpg" alt="Kids clothing collection" loading="lazy"></div>
-      <div class="product-info"><h3>Kids Suits & Sets</h3><p>Special-day styles</p><span class="price">₹399–₹2,199</span></div>
-    </article>
-    <article class="product-card" data-name="kids t-shirt shirt">
-      <div class="product-image"><img src="images/product7.jpg" alt="Kids shirts and T-shirts" loading="lazy"></div>
-      <div class="product-info"><h3>Kids Shirts & Tees</h3><p>Comfortable everyday wear</p><span class="price">₹99–₹549</span></div>
-    </article>
-  </div>
-</section>
+    function renderAll() {
+      renderProducts("trendingProducts", products.slice(0,4));
+      renderProducts("newProducts", products.slice(4,8));
+      renderProducts("ladiesProducts", products.filter(p => p.category === "ladies"));
+      renderProducts("gentsProducts", products.filter(p => p.category === "gents"));
+      renderProducts("kidsProducts", products.filter(p => p.category === "kids"));
+    }
 
-<section class="delivery-banner">
-  <div class="delivery-icon"><i class="fa-solid fa-truck-fast"></i></div>
-  <div><span class="eyebrow">AT YOUR DOORSTEP</span><h2>Free Home Delivery</h2><p>Available within 4–5 km of Namaskar Dresses.</p></div>
-  <span class="delivery-star">✦</span>
-</section>
+    function updateCounts() {
+      document.getElementById("cartCount").textContent = cart.length;
+      document.getElementById("wishCount").textContent = wishlist.size;
+      document.getElementById("mobileCartCount").textContent = cart.length;
+      document.getElementById("mobileWishCount").textContent = wishlist.size;
+    }
 
-<section class="store-section" id="about">
-  <div class="store-content">
-    <span class="eyebrow">COME SAY HELLO</span>
-    <h2>Your Family Store<br><em>in Areraj</em></h2>
-    <p>Dahi Bazzar, Near Someshwarnath Mandir,<br>Areraj, East Champaran, Bihar – 845411</p>
-    <p><i class="fa-regular fa-clock"></i> Open daily: 9:00 AM – 9:00 PM</p>
-    <a class="gold-btn" href="https://www.google.com/maps/search/?api=1&query=Namaskar+Dresses+Dahi+Bazzar+Areraj+Bihar" target="_blank" rel="noopener">Get Directions <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-  </div>
-  <div class="store-monogram"><img src="logo.png" alt="Namaskar Dresses emblem"></div>
-</section>
+    document.addEventListener("click", event => {
+      const cartButton = event.target.closest("[data-cart]");
+      const wishButton = event.target.closest("[data-wish]");
 
-<section class="trust-strip">
-  <div><i class="fa-solid fa-shirt"></i><b>Family Fashion</b><span>For every generation</span></div>
-  <div><i class="fa-solid fa-location-dot"></i><b>Local Store</b><span>Proudly in Areraj</span></div>
-  <div><i class="fa-solid fa-truck-fast"></i><b>Free Delivery</b><span>Within 4–5 km</span></div>
-</section>
+      if (cartButton) {
+        const product = products[Number(cartButton.dataset.cart)];
+        cart.push(product);
+        updateCounts();
+        toast(product.name + " added to cart");
+      }
 
-<footer id="contact">
-  <div class="footer-main">
-    <div class="footer-brand"><img src="logo.png" alt="ND logo"><h2>Namaskar Dresses</h2><p>The Complete Family Shop</p></div>
-    <div class="footer-links"><h3>Explore</h3><a href="#">Home</a><a href="#collections">Collections</a><a href="#about">Our Store</a><a href="#contact">Contact</a></div>
-    <div class="footer-contact"><h3>Visit or Call</h3><p>Dahi Bazzar, Near Someshwarnath Mandir, Areraj, Bihar – 845411</p><a href="tel:+916205317807">+91 62053 17807</a><p>9:00 AM – 9:00 PM, daily</p></div>
-  </div>
-  <div class="copyright">© 2026 Namaskar Dresses. All rights reserved.</div>
-</footer>
+      if (wishButton) {
+        const index = Number(wishButton.dataset.wish);
+        wishlist.has(index) ? wishlist.delete(index) : wishlist.add(index);
+        updateCounts();
+        renderAll();
+        toast(wishlist.has(index) ? "Added to wishlist ♡" : "Removed from wishlist");
+      }
+    });
 
-<nav class="bottom-nav">
-  <a href="#"><i class="fa-solid fa-house"></i><span>Home</span></a>
-  <a href="#collections"><i class="fa-solid fa-layer-group"></i><span>Shop</span></a>
-  <a href="#about"><i class="fa-solid fa-location-dot"></i><span>Store</span></a>
-  <a href="tel:+916205317807"><i class="fa-solid fa-phone"></i><span>Call</span></a>
-</nav>
+    document.getElementById("searchForm").addEventListener("submit", event => {
+      event.preventDefault();
+      const query = document.getElementById("searchInput").value.trim().toLowerCase();
+      const matches = products.filter(p => (p.name + " " + p.category).toLowerCase().includes(query));
+      if (!query) {
+        renderAll();
+        return;
+      }
+      ["trendingProducts","newProducts","ladiesProducts","gentsProducts","kidsProducts"].forEach(id => {
+        document.getElementById(id).innerHTML = "";
+      });
+      renderProducts("trendingProducts", matches);
+      document.getElementById("trending").scrollIntoView({behavior:"smooth"});
+      toast(matches.length ? matches.length + " matching product(s)" : "No products found. Try another search.");
+    });
 
-<div class="side-menu" id="sideMenu">
-  <button class="close-menu" id="closeMenu" aria-label="Close menu">&times;</button>
-  <img src="logo.png" alt="ND logo">
-  <h2>Namaskar Dresses</h2>
-  <p>The Complete Family Shop</p>
-  <a href="#">Home</a><a href="#collections">Collections</a><a href="#ladies">Ladies Wear</a><a href="#gents">Gents Wear</a><a href="#kids">Kids Wear</a><a href="#about">Visit Our Store</a><a href="#contact">Contact Us</a>
-</div>
-<div class="menu-overlay" id="menuOverlay"></div>
+    document.getElementById("menuButton").addEventListener("click", () => {
+      document.querySelector(".nav-links").classList.toggle("nav-open");
+    });
 
-<script src="script.js"></script>
-<script>
-const menu=document.getElementById('sideMenu');
-const overlay=document.getElementById('menuOverlay');
-document.getElementById('menuBtn').addEventListener('click',()=>{menu.classList.add('open');overlay.classList.add('show');});
-document.getElementById('closeMenu').addEventListener('click',()=>{menu.classList.remove('open');overlay.classList.remove('show');});
-overlay.addEventListener('click',()=>{menu.classList.remove('open');overlay.classList.remove('show');});
-document.getElementById('productSearch').addEventListener('input',function(){
- const q=this.value.toLowerCase().trim();
- document.querySelectorAll('.product-card').forEach(card=>{card.style.display=card.dataset.name.includes(q)?'':'none';});
-});
-</script>
+    document.getElementById("cartButton").addEventListener("click", () => {
+      toast(cart.length ? "Cart contains " + cart.length + " item(s). Visit our store to purchase." : "Your cart is empty");
+    });
+    document.getElementById("mobileCart").addEventListener("click", () => document.getElementById("cartButton").click());
+
+    function showWishlist() {
+      const items = products.filter((p, i) => wishlist.has(i));
+      ["newProducts","ladiesProducts","gentsProducts","kidsProducts"].forEach(id => document.getElementById(id).innerHTML = "");
+      renderProducts("trendingProducts", items);
+      document.getElementById("trending").scrollIntoView({behavior:"smooth"});
+      toast(items.length ? "Your wishlist" : "Your wishlist is empty");
+    }
+    document.getElementById("wishlistButton").addEventListener("click", showWishlist);
+    document.getElementById("mobileWish").addEventListener("click", showWishlist);
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+    renderAll();
+  </script>
 </body>
 </html>
