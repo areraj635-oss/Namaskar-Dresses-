@@ -1,603 +1,192 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="theme-color" content="#0b1730">
 <title>Namaskar Dresses | The Complete Family Shop</title>
-
-<meta name="description" content="Namaskar Dresses, Areraj — The Complete Family Shop. Shop quality clothing for the whole family. Visit us at Dahi Bazzar, near Someshwarnath Mandir, Areraj, Bihar.">
+<meta name="description" content="Discover family fashion at Namaskar Dresses, Areraj, Bihar. Shop ladies, gents and kids clothing with free home delivery within 4–5 km.">
 <link rel="icon" type="image/png" href="logo.png">
-  
 <link rel="stylesheet" href="style.css">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-
 <body>
 
+<div class="topbar">✦ FREE HOME DELIVERY WITHIN 4–5 KM &nbsp; | &nbsp; THE COMPLETE FAMILY SHOP ✦</div>
+
 <header class="header">
-
-<div class="menu-btn">
-<i class="fa-solid fa-bars"></i>
-</div>
-
-<div class="logo">
-
-<img src="logo.png" alt="ND Logo">
-
-<div class="logo-text">
-
-<h2>Namaskar Dresses</h2>
-
-<p>The Complete Family Shop</p>
-
-</div>
-
-</div>
-
-<div class="header-icons">
-
-<button class="icon-btn">
-<i class="fa-regular fa-heart"></i>
-<span id="wishlist-count">0</span>
-</button>
-
-<button class="icon-btn">
-<i class="fa-solid fa-cart-shopping"></i>
-<span id="cart-count">0</span>
-</button>
-
-</div>
-
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+  <a class="logo" href="#">
+    <img src="logo.png" alt="Namaskar Dresses logo">
+    <span><strong>Namaskar Dresses</strong><small>The Complete Family Shop</small></span>
+  </a>
+  <div class="header-icons">
+    <button class="icon-btn" aria-label="Wishlist" onclick="document.getElementById('new-arrivals').scrollIntoView({behavior:'smooth'})"><i class="fa-regular fa-heart"></i></button>
+    <button class="icon-btn" aria-label="Shopping cart" onclick="document.getElementById('cart-note').scrollIntoView({behavior:'smooth'})"><i class="fa-solid fa-bag-shopping"></i></button>
+  </div>
 </header>
 
-
 <section class="search-section">
-
-<div class="search-box">
-
-<i class="fa-solid fa-magnifying-glass"></i>
-
-<input
-type="text"
-placeholder="Search Kurtis, Shirts, Kids Wear, Innerwear...">
-
-</div>
-
+  <label class="search-box">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input id="productSearch" type="search" placeholder="Search ladies, gents, kids wear...">
+  </label>
 </section>
 
-</section>
-<div class="category">
-<div class="circle">
-👗
-</div>
-<p>Ladies</p>
-</div>
-
-<div class="category">
-<div class="circle">
-👔
-</div>
-<p>Gents</p>
-</div>
-
-<div class="category">
-<div class="circle">
-🧒
-</div>
-<p>Kids</p>
-</div>
-
-<div class="category">
-<div class="circle">
-🥻
-</div>
-<p>Saree</p>
-</div>
-
-<div class="category">
-<div class="circle">
-👚
-</div>
-<p>Kurti</p>
-</div>
-
-<div class="category">
-<div class="circle">
-👖
-</div>
-<p>More</p>
-</div>
-
-</section>
-
-
-<section class="offer-strip">
-
-<p>
-
-🎉 FESTIVAL SALE • UP TO 50% OFF • FREE HOME DELIVERY (4–5 KM)
-
-</p>
-
-</section>
-
-
-<section class="slider">
-
-<div class="slides">
-
-<img src="images/banner1.jpg" class="slide active">
-
-<img src="images/banner2.jpg" class="slide">
-
-<img src="images/banner3.jpg" class="slide">
-
-</div>
-
-</section>
-
-
-<section class="section-title">
-
-<h2>
-
-🔥 Trending Collection
-
-</h2>
-
-</section>
-
-<section class="products">
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="images/product1.jpg" alt="Designer Kurti">
-
-<button class="wishlist-btn">
-<i class="fa-regular fa-heart"></i>
-</button>
-
-<span class="badge">NEW</span>
-
-</div>
-
-<div class="product-info">
-
-<h3>Designer Kurti Set</h3>
-
-<p class="price">
-
-₹799
-<span>₹999</span>
-
-</p>
-
-<div class="rating">
-
-★★★★★
-
-</div>
-
-<button class="cart-btn">
-
-<i class="fa-solid fa-cart-shopping"></i>
-
-Add to Cart
-
-</button>
-
-</div>
-
-</div>
-
-
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="images/product2.jpg" alt="Printed Suit">
-
-<button class="wishlist-btn">
-<i class="fa-regular fa-heart"></i>
-</button>
-
-<span class="badge">SALE</span>
-
-</div>
-
-<div class="product-info">
-
-<h3>Printed Suit</h3>
-
-<p class="price">
-
-₹999
-<span>₹1299</span>
-
-</p>
-
-<div class="rating">
-
-★★★★★
-
-</div>
-
-<button class="cart-btn">
-
-<i class="fa-solid fa-cart-shopping"></i>
-
-Add to Cart
-
-</button>
-
-</div>
-
-</div>
-
-
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="images/product3.jpg" alt="Kurti">
-
-<button class="wishlist-btn">
-<i class="fa-regular fa-heart"></i>
-</button>
-
-<span class="badge">HOT</span>
-
-</div>
-
-<div class="product-info">
-
-<h3>Cotton Kurti</h3>
-
-<p class="price">
-
-₹699
-<span>₹899</span>
-
-</p>
-
-<div class="rating">
-
-★★★★★
-
-</div>
-
-<button class="cart-btn">
-
-<i class="fa-solid fa-cart-shopping"></i>
-
-Add to Cart
-
-</button>
-
-</div>
-
-</div>
-
-
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="images/product4.jpg" alt="Saree">
-
-<button class="wishlist-btn">
-<i class="fa-regular fa-heart"></i>
-</button>
-
-<span class="badge">TRENDING</span>
-
-</div>
-
-<div class="product-info">
-
-<h3>Festival Saree</h3>
-
-<p class="price">
-
-₹1299
-<span>₹1699</span>
-
-</p>
-
-<div class="rating">
-
-★★★★★
-
-</div>
-
-<button class="cart-btn">
-
-<i class="fa-solid fa-cart-shopping"></i>
-
-Add to Cart
-
-</button>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="section-title">
-
-<h2>
-
-✨ New Arrivals
-
-</h2>
-
-</section>
-
-<section class="products">
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="images/product5.jpg" alt="Party Wear">
-
-<button class="wishlist-btn">
-<i class="fa-regular fa-heart"></i>
-</button>
-
-<span class="badge">NEW</span>
-
-</div>
-
-<div class="product-info">
-
-<h3>Party Wear Suit</h3>
-
-<p class="price">
-
-₹1499
-<span>₹1899</span>
-
-</p>
-
-<div class="rating">
-★★★★★
-</div>
-
-<button class="cart-btn">
-<i class="fa-solid fa-cart-shopping"></i>
-Add to Cart
-</button>
-
-</div>
-
-</div>
-
-
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="images/product6.jpg" alt="Plazo">
-
-<button class="wishlist-btn">
-<i class="fa-regular fa-heart"></i>
-</button>
-
-<span class="badge">HOT</span>
-
-</div>
-
-<div class="product-info">
-
-<h3>Kurti With Plazo</h3>
-
-<p class="price">
-
-₹1199
-<span>₹1499</span>
-
-</p>
-
-<div class="rating">
-★★★★★
-</div>
-
-<button class="cart-btn">
-<i class="fa-solid fa-cart-shopping"></i>
-Add to Cart
-</button>
-
-</div>
-
-</div>
-
-
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="images/product7.jpg" alt="Kids Wear">
-
-<button class="wishlist-btn">
-<i class="fa-regular fa-heart"></i>
-</button>
-
-<span class="badge">SALE</span>
-
-</div>
-
-<div class="product-info">
-
-<h3>Kids Collection</h3>
-
-<p class="price">
-
-₹599
-<span>₹799</span>
-
-</p>
-
-<div class="rating">
-★★★★★
-</div>
-
-<button class="cart-btn">
-<i class="fa-solid fa-cart-shopping"></i>
-Add to Cart
-</button>
-
-</div>
-
-</div>
-
-
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="images/product8.jpg" alt="Mens Wear">
-
-<button class="wishlist-btn">
-<i class="fa-regular fa-heart"></i>
-</button>
-
-<span class="badge">BEST</span>
-
-</div>
-
-<div class="product-info">
-
-<h3>Premium Shirt</h3>
-
-<p class="price">
-
-₹899
-<span>₹1199</span>
-
-</p>
-
-<div class="rating">
-★★★★★
-</div>
-
-<button class="cart-btn">
-<i class="fa-solid fa-cart-shopping"></i>
-Add to Cart
-</button>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="delivery">
-
-<div class="delivery-box">
-
-<h2>🚚 FREE HOME DELIVERY</h2>
-
-<p>
-Available within 4–5 KM of Namaskar Dresses
-</p>
-
-</div>
-
-</section>
-
-
-<section class="visit-store">
-
-<h2>📍 Visit Our Store</h2>
-
-<p>
-Dahi Bazaar, Near Someshwarnath Mandir
-</p>
-
-<p>
-Areraj, East Champaran, Bihar - 845411
-</p>
-
-<a href="#" class="map-btn">
-
-Open in Google Maps
-
-</a>
-
-</section>
-
-
-<section class="reviews">
-
-<h2>
-
-⭐ Customer Reviews
-
-</h2>
-
-<div class="review-card">
-
-<h4>Rahul Kumar</h4>
-
-<p>
-
-"Excellent collection and affordable prices."
-
-</p>
-
-</div>
-
-<div class="review-card">
-
-<h4>Priya Singh</h4>
-
-<p>
-
-"Best shopping experience in Areraj."
-
-</p>
-
-</div>
-
-</section>
-
-
-<footer>
-
-<div class="footer-logo">
-
-<img src="logo.png" alt="ND Logo">
-
-<h2>Namaskar Dresses</h2>
-
-<p>The Complete Family Shop</p>
-
-</div>
-
-<div class="footer-links">
-
-<a href="#">Home</a>
-
-<a href="#">Collections</a>
-
-<a href="#">About</a>
-
-<a href="#">Contact</a>
-
+<nav class="categories" aria-label="Shop categories">
+  <a class="category" href="#ladies"><span class="circle">👗</span><span>Ladies</span></a>
+  <a class="category" href="#gents"><span class="circle">👔</span><span>Gents</span></a>
+  <a class="category" href="#kids"><span class="circle">🧒</span><span>Kids</span></a>
+  <a class="category" href="#new-arrivals"><span class="circle">✨</span><span>New In</span></a>
+  <a class="category" href="#collections"><span class="circle">👚</span><span>Collections</span></a>
+</nav>
+
+<section class="hero">
+  <div class="hero-copy">
+    <span class="eyebrow">STYLE • QUALITY • VALUE</span>
+    <h1>Style for<br><em>Every Family</em></h1>
+    <p>Discover everyday fashion and special-occasion styles for your loved ones.</p>
+    <a class="gold-btn" href="#collections">Explore Collection <i class="fa-solid fa-arrow-right"></i></a>
   </div>
-<div class="footer-contact">
+  <div class="hero-art">
+    <div class="hero-seal"><span>ND</span><small>EST. NAMASKAR DRESSES</small></div>
+    <span class="hero-caption">Fashion for everyone</span>
+  </div>
+</section>
 
-<p>📞 +91 6205317807</p
+<div class="offer-strip"><span>✦ FESTIVE STYLE</span><span>✦ GREAT VALUE</span><span>✦ FREE DELIVERY WITHIN 4–5 KM</span></div>
+
+<section class="section" id="collections">
+  <div class="section-heading">
+    <div><span class="eyebrow">CURATED FOR YOU</span><h2>Shop by Collection</h2></div>
+    <span class="heading-mark">✦</span>
+  </div>
+  <div class="collection-grid">
+    <a class="collection-card ladies" href="#ladies"><span>01 / WOMEN</span><h3>Ladies Wear</h3><p>Kurtis, suits, tops & more</p><b>EXPLORE ↗</b></a>
+    <a class="collection-card gents" href="#gents"><span>02 / MEN</span><h3>Gents Wear</h3><p>Shirts, jeans, tees & more</p><b>EXPLORE ↗</b></a>
+    <a class="collection-card kids" href="#kids"><span>03 / LITTLE ONES</span><h3>Kids Collection</h3><p>Everyday comfort & occasion wear</p><b>EXPLORE ↗</b></a>
+  </div>
+</section>
+
+<section class="section product-section" id="ladies">
+  <div class="section-heading">
+    <div><span class="eyebrow">FASHION FAVOURITES</span><h2>Ladies Collection</h2></div>
+  </div>
+  <div class="products">
+    <article class="product-card" data-name="kurti kurti set ladies">
+      <div class="product-image"><img src="images/product1.jpg" alt="Ladies kurti collection" loading="lazy"><span class="badge">POPULAR</span></div>
+      <div class="product-info"><h3>Kurtis & Kurti Sets</h3><p>Everyday and festive styles</p><span class="price">₹179–₹2,099</span></div>
+    </article>
+    <article class="product-card" data-name="ladies top frock">
+      <div class="product-image"><img src="images/product2.jpg" alt="Ladies tops and frocks" loading="lazy"><span class="badge">NEW STYLES</span></div>
+      <div class="product-info"><h3>Tops & Frocks</h3><p>Styles for every occasion</p><span class="price">₹199–₹1,399</span></div>
+    </article>
+    <article class="product-card" data-name="nighty palazzo sharara">
+      <div class="product-image"><img src="images/product5.jpg" alt="Ladies nightwear and palazzo" loading="lazy"></div>
+      <div class="product-info"><h3>Nightwear & Bottoms</h3><p>Comfort for every day</p><span class="price">₹99–₹499</span></div>
+    </article>
+  </div>
+</section>
+
+<section class="section product-section" id="gents">
+  <div class="section-heading">
+    <div><span class="eyebrow">SMART EVERYDAY STYLE</span><h2>Gents Collection</h2></div>
+  </div>
+  <div class="products">
+    <article class="product-card" data-name="shirt half shirt">
+      <div class="product-image"><img src="images/product8.jpg" alt="Gents shirts" loading="lazy"></div>
+      <div class="product-info"><h3>Shirts</h3><p>Casual and smart styles</p><span class="price">₹219–₹699</span></div>
+    </article>
+    <article class="product-card" data-name="t-shirt tee">
+      <div class="product-image"><img src="images/product3.jpg" alt="Gents T-shirts" loading="lazy"></div>
+      <div class="product-info"><h3>T-Shirts</h3><p>Easy everyday essentials</p><span class="price">₹99–₹349</span></div>
+    </article>
+    <article class="product-card" data-name="jeans lower track pants">
+      <div class="product-image"><img src="images/product4.jpg" alt="Gents jeans and bottoms" loading="lazy"></div>
+      <div class="product-info"><h3>Jeans & Track Pants</h3><p>Comfort meets style</p><span class="price">₹149–₹1,299</span></div>
+    </article>
+  </div>
+</section>
+
+<section class="section product-section" id="kids">
+  <div class="section-heading">
+    <div><span class="eyebrow">LITTLE STYLES, BIG SMILES</span><h2>Kids Collection</h2></div>
+  </div>
+  <div class="products">
+    <article class="product-card" data-name="kids boys girls suit">
+      <div class="product-image"><img src="images/product6.jpg" alt="Kids clothing collection" loading="lazy"></div>
+      <div class="product-info"><h3>Kids Suits & Sets</h3><p>Special-day styles</p><span class="price">₹399–₹2,199</span></div>
+    </article>
+    <article class="product-card" data-name="kids t-shirt shirt">
+      <div class="product-image"><img src="images/product7.jpg" alt="Kids shirts and T-shirts" loading="lazy"></div>
+      <div class="product-info"><h3>Kids Shirts & Tees</h3><p>Comfortable everyday wear</p><span class="price">₹99–₹549</span></div>
+    </article>
+  </div>
+</section>
+
+<section class="delivery-banner">
+  <div class="delivery-icon"><i class="fa-solid fa-truck-fast"></i></div>
+  <div><span class="eyebrow">AT YOUR DOORSTEP</span><h2>Free Home Delivery</h2><p>Available within 4–5 km of Namaskar Dresses.</p></div>
+  <span class="delivery-star">✦</span>
+</section>
+
+<section class="store-section" id="about">
+  <div class="store-content">
+    <span class="eyebrow">COME SAY HELLO</span>
+    <h2>Your Family Store<br><em>in Areraj</em></h2>
+    <p>Dahi Bazzar, Near Someshwarnath Mandir,<br>Areraj, East Champaran, Bihar – 845411</p>
+    <p><i class="fa-regular fa-clock"></i> Open daily: 9:00 AM – 9:00 PM</p>
+    <a class="gold-btn" href="https://www.google.com/maps/search/?api=1&query=Namaskar+Dresses+Dahi+Bazzar+Areraj+Bihar" target="_blank" rel="noopener">Get Directions <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+  </div>
+  <div class="store-monogram"><img src="logo.png" alt="Namaskar Dresses emblem"></div>
+</section>
+
+<section class="trust-strip">
+  <div><i class="fa-solid fa-shirt"></i><b>Family Fashion</b><span>For every generation</span></div>
+  <div><i class="fa-solid fa-location-dot"></i><b>Local Store</b><span>Proudly in Areraj</span></div>
+  <div><i class="fa-solid fa-truck-fast"></i><b>Free Delivery</b><span>Within 4–5 km</span></div>
+</section>
+
+<footer id="contact">
+  <div class="footer-main">
+    <div class="footer-brand"><img src="logo.png" alt="ND logo"><h2>Namaskar Dresses</h2><p>The Complete Family Shop</p></div>
+    <div class="footer-links"><h3>Explore</h3><a href="#">Home</a><a href="#collections">Collections</a><a href="#about">Our Store</a><a href="#contact">Contact</a></div>
+    <div class="footer-contact"><h3>Visit or Call</h3><p>Dahi Bazzar, Near Someshwarnath Mandir, Areraj, Bihar – 845411</p><a href="tel:+916205317807">+91 62053 17807</a><p>9:00 AM – 9:00 PM, daily</p></div>
+  </div>
+  <div class="copyright">© 2026 Namaskar Dresses. All rights reserved.</div>
+</footer>
+
+<nav class="bottom-nav">
+  <a href="#"><i class="fa-solid fa-house"></i><span>Home</span></a>
+  <a href="#collections"><i class="fa-solid fa-layer-group"></i><span>Shop</span></a>
+  <a href="#about"><i class="fa-solid fa-location-dot"></i><span>Store</span></a>
+  <a href="tel:+916205317807"><i class="fa-solid fa-phone"></i><span>Call</span></a>
+</nav>
+
+<div class="side-menu" id="sideMenu">
+  <button class="close-menu" id="closeMenu" aria-label="Close menu">&times;</button>
+  <img src="logo.png" alt="ND logo">
+  <h2>Namaskar Dresses</h2>
+  <p>The Complete Family Shop</p>
+  <a href="#">Home</a><a href="#collections">Collections</a><a href="#ladies">Ladies Wear</a><a href="#gents">Gents Wear</a><a href="#kids">Kids Wear</a><a href="#about">Visit Our Store</a><a href="#contact">Contact Us</a>
+</div>
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<script src="script.js"></script>
+<script>
+const menu=document.getElementById('sideMenu');
+const overlay=document.getElementById('menuOverlay');
+document.getElementById('menuBtn').addEventListener('click',()=>{menu.classList.add('open');overlay.classList.add('show');});
+document.getElementById('closeMenu').addEventListener('click',()=>{menu.classList.remove('open');overlay.classList.remove('show');});
+overlay.addEventListener('click',()=>{menu.classList.remove('open');overlay.classList.remove('show');});
+document.getElementById('productSearch').addEventListener('input',function(){
+ const q=this.value.toLowerCase().trim();
+ document.querySelectorAll('.product-card').forEach(card=>{card.style.display=card.dataset.name.includes(q)?'':'none';});
+});
+</script>
+</body>
+</html>
